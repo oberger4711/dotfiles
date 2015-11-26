@@ -1,0 +1,24 @@
+[submodule ".vim/bundle/solarized"]
+	path = .vim/bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "powerline"]
+	path = powerline
+	url = https://github.com/powerline/fonts.git
+[submodule ".vim/bundle/airline"]
+	path = .vim/bundle/airline
+	url = https://github.com/bling/vim-airline.git
+[submodule ".vim/bundle/vimtex"]
+	path = .vim/bundle/vimtex
+	url = https://github.com/lervag/vimtex.git
+[submodule ".vim/bundle/voom"]
+	path = .vim/bundle/voom
+	url = https://github.com/vim-voom/VOoM.git
+[submodule ".vim/bundle/supertab"]
+	path = .vim/bundle/supertab
+	url = https://github.com/ervandew/supertab
+[submodule ".vim/bundle/ycm"]
+	path = .vim/bundle/ycm
+	url = https://github.com/Valloric/YouCompleteMe.git
+[submodule ".oh-my-zsh"]
+	path = .oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git
