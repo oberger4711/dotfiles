@@ -1,10 +1,10 @@
-#!/bin/sh
+#!/bin/bash
 
 # Script stolen from https://github.com/rasendubi/dotfiles/blob/master/setup.sh.
 # This script installs all configs to home directory.
 # You MUST write your configs yourself, never copy other's.
 
-FILES=".vimrc .vim .oh-my-zsh .zshrc .zsh "
+FILES=".vimrc .vim .oh-my-zsh .zshrc"
 
 DEST=$1
 
@@ -32,9 +32,8 @@ ask_install() {
 	fi
 }
 
-# I know check is stupid but I'll be happy if it stops at least one person
-[ $(id -un) = "rasen" ] || exit 1;
-
+// Link dotfiles to this dir.
 for FILE in $FILES; do
 	ask_install $FILE
 done
+
