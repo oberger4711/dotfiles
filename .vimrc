@@ -3,6 +3,8 @@
 execute pathogen#infect()
 
 " General
+" Use custom .vimrc from launch directory if existing.
+:set exrc
 " Do not create swap file.
 set noswapfile
 " Enables syntax highlighting.
