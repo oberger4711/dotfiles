@@ -40,7 +40,7 @@ let g:airline_powerline_fonts = 1
 " https://github.com/Valloric/YouCompleteMe.git
 " Copen on error.
 let g:clang_complete_copen = 1
-let g:ycm_global_ycm_extra_conf = "~/.vim/ycm_extra_conf.py"
+let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
 let g:ycm_key_list_select_completion=[]
 let g:ycm_key_list_previous_completion=[]
 
