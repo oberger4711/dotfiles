@@ -15,6 +15,10 @@ filetype plugin on
 filetype indent on
 " Enable line numbers.
 set number
+" Highlight current line.
+set cursorline
+" Highlight matching [{()}].
+set showmatch
 " Use Powerline font for special chars.
 set anti enc=utf-8
 set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
@@ -25,8 +29,11 @@ let g:netrw_liststyle=3
 " http://ethanschoonover.com/solarized/vim-colors-solarized
 " Set color scheme.
 set background=dark
+colorscheme solarized
 if has('gui_running')
-	colorscheme solarized
+else
+	set t_Co=256
+	let g:solarized_termcolors=256
 endif
 
 " Airline plugin

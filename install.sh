@@ -32,7 +32,7 @@ ask_install() {
 	fi
 }
 
-// Link dotfiles to this dir.
+# Link dotfiles to this dir.
 for FILE in $FILES; do
 	ask_install $FILE
 done
