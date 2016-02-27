@@ -4,7 +4,7 @@
 # This script installs all configs to home directory.
 # You MUST write your configs yourself, never copy other's.
 
-FILES=".vimrc .vim .oh-my-zsh .zshrc"
+FILES=".vimrc .vim .oh-my-zsh .zshrc .tmux.conf"
 
 DEST=$1
 
