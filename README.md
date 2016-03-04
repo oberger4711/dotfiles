@@ -1,5 +1,5 @@
 ## Synopsis
-My Configurations and plugins for vim and zsh.
+My Configurations and plugins for vim, zsh and tmux.
 They should work on Ubuntu systems.
 
 ## Motivation
