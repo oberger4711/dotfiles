@@ -2,7 +2,7 @@
 export ZSH=/home/oberger/.oh-my-zsh
 
 # Fix color issues.
-TERM=screen-256color
+TERM='xterm-256color'
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
