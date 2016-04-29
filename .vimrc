@@ -33,6 +33,7 @@ colorscheme solarized
 if has('gui_running')
 else
 	set t_Co=256
+	set term=screen-256color
 	let g:solarized_termcolors=256
 endif
 
