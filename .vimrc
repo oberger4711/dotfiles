@@ -5,6 +5,8 @@ execute pathogen#infect()
 " General
 " Use custom .vimrc from launch directory if existing.
 :set exrc
+" Add all subdirs from launch directory to path.
+set path=$PWD/**
 " Do not create swap file.
 set noswapfile
 " Enables syntax highlighting.
