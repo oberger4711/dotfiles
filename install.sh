@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git submodule update --init --recursive
+
 # Script stolen from https://github.com/rasendubi/dotfiles/blob/master/setup.sh.
 # This script installs all configs to home directory.
 # You MUST write your configs yourself, never copy other's.

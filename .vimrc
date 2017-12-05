@@ -30,7 +30,7 @@ let g:netrw_liststyle=3
 " Solarized plugin
 " http://ethanschoonover.com/solarized/vim-colors-solarized
 " Set color scheme.
-set background=dark
+set background=light
 colorscheme solarized
 if has('gui_running')
 else
@@ -47,17 +47,6 @@ set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 " Use powerline font.
 let g:airline_powerline_fonts = 1
-
-" YouCompleteMe plugin
-" https://github.com/Valloric/YouCompleteMe.git
-" Copen on error.
-let g:clang_complete_copen = 1
-let g:ycm_global_ycm_extra_conf = "~/.vim/.ycm_extra_conf.py"
-let g:ycm_key_list_select_completion=[]
-let g:ycm_key_list_previous_completion=[]
-" Close preview when not needed anymore.
-let g:ycm_autoclose_preview_window_after_completion = 1
-let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Vimtex plugin
 " https://github.com/lervag/vimtex
