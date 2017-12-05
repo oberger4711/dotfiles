@@ -13,8 +13,11 @@ set noswapfile
 syntax on
 " Use plugins specific to the file type.
 filetype plugin on
+" Enable omnicomplete.
+set omnifunc=ccomplete#Complete
 " Enables filetype specific indent.
 filetype indent on
+" Indent with spaces.
 set expandtab
 set shiftwidth=4
 set softtabstop=4
@@ -61,3 +64,4 @@ let g:tex_flavor = 'latex'
 " https://github.com/ervandew/supertab
 " Set completion keys.
 let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
+let g:SuperTabDefaultCompletionType = "context"
