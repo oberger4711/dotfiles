@@ -16,9 +16,6 @@
 [submodule ".vim/bundle/supertab"]
 	path = .vim/bundle/supertab
 	url = https://github.com/ervandew/supertab
-[submodule ".vim/bundle/ycm"]
-	path = .vim/bundle/ycm
-	url = https://github.com/Valloric/YouCompleteMe.git
 [submodule ".oh-my-zsh"]
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
