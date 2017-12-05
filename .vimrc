@@ -24,6 +24,7 @@ set number
 set cursorline
 " Highlight matching [{()}].
 set showmatch
+set hlsearch
 " Use Powerline font for special chars.
 set anti enc=utf-8
 set guifont=Inconsolata\ for\ Powerline\ Medium\ 12
