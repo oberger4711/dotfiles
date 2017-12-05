@@ -15,6 +15,9 @@ syntax on
 filetype plugin on
 " Enables filetype specific indent.
 filetype indent on
+set expandtab
+set shiftwidth=4
+set softtabstop=4
 " Enable line numbers.
 set number
 " Highlight current line.
