@@ -63,5 +63,4 @@ let g:tex_flavor = 'latex'
 " Supertab plugin
 " https://github.com/ervandew/supertab
 " Set completion keys.
-let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
 let g:SuperTabDefaultCompletionType = "context"
