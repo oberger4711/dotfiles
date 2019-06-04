@@ -19,8 +19,8 @@ set omnifunc=ccomplete#Complete
 filetype indent on
 " Indent with spaces.
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=2
+set softtabstop=2
 " Enable line numbers.
 set number
 " Highlight current line.
