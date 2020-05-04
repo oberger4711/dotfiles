@@ -6,7 +6,7 @@ git submodule update --init --recursive
 # This script installs all configs to home directory.
 # You MUST write your configs yourself, never copy other's.
 
-FILES=".vimrc .vim .oh-my-zsh .zshrc .tmux.conf"
+FILES=".vimrc .vim .oh-my-zsh .zshrc .tmux.conf .fzf"
 
 DEST=$1
 
@@ -39,3 +39,12 @@ for FILE in $FILES; do
 	ask_install $FILE
 done
 
+# Install fzf if desired.
+if [ -e $HOME/.fzf ]; then
+	read -r -p "Install fzf? (No super user rights required) [y/N] " response
+	case $response in
+		[yY][eE][sS]|[yY])
+			$HOME/.fzf/install
+			;;
+	esac
+fi
