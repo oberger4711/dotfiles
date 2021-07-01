@@ -50,3 +50,6 @@ export WORKON_HOME=$HOME/.virtualenvs
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# ROS
+#[ -f /opt/ros/dashing/setup.zsh ] && source /opt/ros/dashing/setup.zsh && echo "Sourced ROS2 Dashing."

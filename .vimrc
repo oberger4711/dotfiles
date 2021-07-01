@@ -37,7 +37,7 @@ let g:netrw_liststyle=3
 " Solarized plugin
 " http://ethanschoonover.com/solarized/vim-colors-solarized
 " Set color scheme.
-set background=light
+set background=dark
 colorscheme solarized
 if has('gui_running')
 else
@@ -53,7 +53,7 @@ set laststatus=2
 " Show tab bar.
 let g:airline#extensions#tabline#enabled = 1
 " Use powerline font.
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 
 " Vimtex plugin
 " https://github.com/lervag/vimtex
@@ -64,3 +64,8 @@ let g:tex_flavor = 'latex'
 " https://github.com/ervandew/supertab
 " Set completion keys.
 let g:SuperTabDefaultCompletionType = "context"
+
+" FZF
+set rtp+=~/.fzf
+nnoremap <silent> <C-k> :Files<CR>
+nnoremap <silent> <C-j> :Rg<CR>
