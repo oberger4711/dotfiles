@@ -31,7 +31,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(git sudo)
 
 # User configuration
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/oberger/.local/bin:/snap/nvim/current/usr/bin"
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
@@ -46,10 +46,19 @@ alias cdp="cd $HOME/Projects"
 # virtualenvwrapper
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 export WORKON_HOME=$HOME/.virtualenvs
-[ -f /usr/local/bin/virtualenvwrapper.sh ] && source /usr/local/bin/virtualenvwrapper.sh
+[ -f $HOME/.local/bin/virtualenvwrapper.sh ] && source $HOME/.local/bin/virtualenvwrapper.sh
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# CUDA
+export CUDA_HOME=/usr/local/cuda
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/lib64:/usr/local/cuda/extras/CUPTI/lib64
+export PATH=$PATH:$CUDA_HOME/bin
+
 # ROS
-#[ -f /opt/ros/dashing/setup.zsh ] && source /opt/ros/dashing/setup.zsh && echo "Sourced ROS2 Dashing."
+[ -f /opt/ros/foxy/setup.zsh ] && \
+  export ROS_DOMAIN_ID=30 && \
+  export TURTLEBOT3_MODEL=burger && \
+  source /opt/ros/foxy/setup.zsh && \
+  echo "Sourced ROS2 Foxy. Domain ID: $ROS_DOMAIN_ID"
